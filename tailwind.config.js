@@ -11,6 +11,28 @@ module.exports = {
         oswald: ["Oswald", "sans-serif"],
         "open-sans": ["Open Sans", "sans-serif"],
       },
+      keyframes: {
+        "horizontal-shimmer": {
+          "0%": {
+            transform: "translateX(-100%)",
+          },
+          "100%": {
+            transform: "translateX(100%)",
+          },
+        },
+        "slide-in": {
+          "0%": {
+            transform: "translateX(100%)",
+          },
+          "100%": {
+            transform: "translateX(0)",
+          },
+        },
+      },
+      animation: {
+        shimmer: "horizontal-shimmer 1.75s",
+        slide: "slide-in 1.5s",
+      },
     },
   },
   plugins: [

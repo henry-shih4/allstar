@@ -108,7 +108,7 @@ export default function Players() {
 
   return (
     <>
-      <div className="font-open-sans tracking-wider flex justify-around items-center flex-col  mb-4 md:gap-y-10">
+      <div className="font-open-sans tracking-wider flex justify-around items-center flex-col  bg-[#F6F8FF] overflow-hidden pb-2 md:gap-y-10">
         <div className="flex space-x-4 mt-4 md:hidden">
           <button
             className={
@@ -150,12 +150,12 @@ export default function Players() {
               className="h-[300px] min-w-[200px] object-contain"
             />
           </div>
-          <div className="flex justify-center items-center flex-wrap">
+          <div className="flex justify-center items-center flex-wrap text-gray-900">
             {players.slice(0, 5).map((player) => {
               return (
-                <div className="group perspective m-2 ">
+                <div className="group perspective m-2">
                   <div
-                    className="relative h-[400px] w-[260px] flex justify-center items-center  preserve-3d group-hover:my-rotate-y-180 duration-1000  "
+                    className="relative h-[400px] w-[260px] flex justify-center items-center  preserve-3d group-hover:my-rotate-y-180 duration-1000 animate-slide "
                     key={player.id}
                   >
                     <div className="absolute backface-hidden">
@@ -169,7 +169,14 @@ export default function Players() {
                         <div>{player.team}</div>
                       </div>
                     </div>
-                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full rounded-lg bg-blue-600 ">
+                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full rounded-lg bg-[#17408b] group overflow-hidden">
+                      <div
+                        className="absolute inset-0
+  bg-gradient-to-r
+    from-transparent via-rose-100/10 to-transparent
+    group-hover:animate-shimmer
+    translate-x-[-100%]"
+                      ></div>
                       <div className="flex justify-center items-center text-center h-full flex-col text-white font-oswald">
                         <img src="/images/card-logo-transparent.png" />
                         <div className="text-xl font-bold">
@@ -208,7 +215,7 @@ export default function Players() {
               return (
                 <div className="group perspective m-2 ">
                   <div
-                    className="relative h-[400px] w-[260px] flex justify-center items-center  preserve-3d group-hover:my-rotate-y-180 duration-1000  "
+                    className="relative h-[400px] w-[260px] flex justify-center items-center  preserve-3d group-hover:my-rotate-y-180 duration-1000 animate-slide "
                     key={player.id}
                   >
                     <div className="absolute backface-hidden">
@@ -222,7 +229,15 @@ export default function Players() {
                         <div>{player.team}</div>
                       </div>
                     </div>
-                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full rounded-lg bg-[#C9082A]">
+                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full rounded-lg bg-[#C9082A] overflow-hidden">
+                      <div
+                        className="absolute inset-0
+  bg-gradient-to-r
+    from-transparent via-white/20 to-transparent
+    group-hover:animate-shimmer
+    translate-x-[-100%]"
+                      ></div>
+
                       <div className="flex justify-center items-center text-center h-full flex-col text-white font-oswald">
                         <img src="/images/card-logo-transparent.png" />
                         <div className="text-xl font-bold">

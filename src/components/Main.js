@@ -1,7 +1,7 @@
 export default function Main() {
   return (
     <>
-      <div className="flex justify-center items-center mb-4 bg-white">
+      <div className="flex justify-center items-center pb-4 bg-[#C9082A] text-white">
         <div className="w-[90%] flex justify-center items-center flex-col md:flex-row">
           <div className="flex justify-center items-center mt-4 w-[50%]">
             <div className="">
@@ -15,7 +15,7 @@ export default function Main() {
           <div className="w-[50%] h-max flex justify-center items-center mt-4 bg">
             <div className="space-y-3">
               <div className="flex justify-center items-center">
-                <h1 className="font-PT-sans tracking-wider text-md font-bold text-center p-2 md:text-xl text-[#17408b] mb-4">
+                <h1 className="font-PT-sans tracking-wider text-md font-bold text-center p-2 md:text-xl mb-4">
                   The NBA All-Star Game is a thrilling annual event that brings
                   together the best basketball players in the world!
                 </h1>
