@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "pt-sans": ["PT Sans", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
         "open-sans": ["Open Sans", "sans-serif"],
       },
     },

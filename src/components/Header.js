@@ -16,7 +16,7 @@ export default function Header() {
           <div className="bg-white h-[2px] w-[16px]"></div>
           <div className="bg-white h-[2px] w-[16px]"></div>
         </div>
-        <div className="hidden w-full md:flex">
+        <div className="hidden h-full w-full md:flex">
           <a className="hover:bg-white hover:text-[#17408b] h-full flex justify-center items-center w-[100%] duration-300 cursor-pointer">
             Events
           </a>
@@ -34,8 +34,8 @@ export default function Header() {
       <div
         className={
           showSideBar
-            ? "absolute top-0 left-0 h-[100%] bg-[#17408b] w-[200px] z-50 text-white"
-            : "hidden"
+            ? "absolute top-0 left-0 h-[100%] bg-[#17408b] w-[200px] z-50 text-white transition translate-x-0 duration-500"
+            : "invisible absolute top-0 left-0 h-[100%] bg-[#17408b] w-[200px] z-50 text-white translate-x-[-100%] duration-500"
         }
       >
         <div className="flex flex-col gap-y-[4px] p-2 md:hidden">

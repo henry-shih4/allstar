@@ -114,7 +114,7 @@ export default function Players() {
             className={
               showTeam === "Lebron"
                 ? "bg-[#FDB927] text-[#552583]  h-[40px] w-[100px] rounded-md font-bold"
-                : "bg-white text-black h-[40px] w-[100px] rounded-md font-bold border-black border-solid border-2"
+                : "bg-white text-black h-[40px] w-[100px] rounded-md font-bold border-black border-solid border-2 hover:scale-105"
             }
             onClick={() => {
               setShowTeam("Lebron");
@@ -126,7 +126,7 @@ export default function Players() {
             className={
               showTeam === "Giannis"
                 ? "bg-green-800 text-white h-[40px] w-[100px] rounded-md font-bold"
-                : "bg-white text-black h-[40px] w-[100px] rounded-md font-bold border-black border-solid border-2"
+                : "bg-white text-black h-[40px] w-[100px] rounded-md font-bold border-black border-solid border-2 hover:scale-105"
             }
             onClick={() => {
               setShowTeam("Giannis");
@@ -169,15 +169,17 @@ export default function Players() {
                         <div>{player.team}</div>
                       </div>
                     </div>
-                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full border-solid border-black border-[1px] rounded-lg bg-blue-600 ">
-                      <div className="flex justify-center items-center text-center h-full flex-col text-white">
+                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full rounded-lg bg-blue-600 ">
+                      <div className="flex justify-center items-center text-center h-full flex-col text-white font-oswald">
                         <img src="/images/card-logo-transparent.png" />
                         <div className="text-xl font-bold">
                           {player.allStarCount}-time All Star
                         </div>
-                        <div>{player.ppg} ppg</div>
-                        <div>{player.apg} apg</div>
-                        <div>{player.RPG} rpg</div>
+                        <div className="space-y-2 mt-2 text-lg">
+                          <div>{player.ppg.toFixed(1)} ppg</div>
+                          <div>{player.apg.toFixed(1)} apg</div>
+                          <div>{player.RPG.toFixed(1)} rpg</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -220,15 +222,17 @@ export default function Players() {
                         <div>{player.team}</div>
                       </div>
                     </div>
-                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full border-solid border-black border-[1px] rounded-lg bg-[#C9082A]">
-                      <div className="flex justify-center items-center text-center h-full flex-col text-white">
+                    <div className="absolute my-rotate-y-180 backface-hidden w-full h-full rounded-lg bg-[#C9082A]">
+                      <div className="flex justify-center items-center text-center h-full flex-col text-white font-oswald">
                         <img src="/images/card-logo-transparent.png" />
                         <div className="text-xl font-bold">
                           {player.allStarCount}-time All Star
                         </div>
-                        <div>{player.ppg} ppg</div>
-                        <div>{player.apg} apg</div>
-                        <div>{player.RPG} rpg</div>
+                        <div className="space-y-2 mt-2 text-lg">
+                          <div>{player.ppg.toFixed(1)} ppg</div>
+                          <div>{player.apg.toFixed(1)} apg</div>
+                          <div>{player.RPG.toFixed(1)} rpg</div>
+                        </div>
                       </div>
                     </div>
                   </div>
